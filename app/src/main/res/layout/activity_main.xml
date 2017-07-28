@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context="com.example.hoaiktt.customcomponent.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+        <com.example.hoaiktt.customcomponent.ColoredView
+            android:id="@+id/canvasPaint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/paint_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="#4ae70c"
+            android:onClick="ChooseClick"
+            android:layout_margin="5dp"
+            android:src="@drawable/selector"
+            android:tag="#4ae70c" />
+
+        <ImageButton
+            android:layout_margin="5dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="#ead305"
+            android:onClick="ChooseClick"
+            android:src="@drawable/selector"
+            android:tag="#ead305" />
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="#d408df"
+            android:onClick="ChooseClick"
+            android:layout_margin="5dp"
+            android:src="@drawable/selector"
+            android:tag="#d408df" />
+    </LinearLayout>
+
+</LinearLayout>
